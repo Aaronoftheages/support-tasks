@@ -33,6 +33,8 @@ def port_test(dest, port)
 end
 
 results_json = []
+deprecation_msg = "This task is deprecated.
+                   This task will be removed in a future release. Please see this modules's README for more information" 
 
 portdesc.each_key do |port_no|
   # If port is open
