@@ -40,6 +40,7 @@ portdesc.each_key do |port_no|
   # If port is open
   result = if port_test(destination, port_no)
              {
+                deprecation_msg,
                'destination' => destination.to_s,
                'port' => port_no,
                'result' => 'pass',
@@ -48,6 +49,7 @@ portdesc.each_key do |port_no|
            # If port is closed
            else
              {
+                deprecation_msg,
                'destination' => destination.to_s,
                'port' => port_no,
                'result' => 'fail',
