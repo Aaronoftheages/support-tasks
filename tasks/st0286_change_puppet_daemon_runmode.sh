@@ -6,6 +6,7 @@ declare PT_reason
 declare PT_puppet_mode
 
 LOCKFILE="$(puppet config print statedir)/agent_disabled.lock"
+task-output "deprecation" "This task is deprecated and will be removed in a future release. Please see this module's README for more information"
 
 if [[ $PT_puppet_mode == "enable" ]]
 then
