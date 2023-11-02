@@ -9,6 +9,7 @@ task-output "deprecation" "This task is deprecated and will be removed in a futu
 LOCKFILE="$(puppet config print statedir)/agent_disabled.lock"
 
 if [[ $PT_puppet_mode == "enable" ]]
+task-output "deprecation" "This task is deprecated and will be removed in a future release. Please see this module's README for more information"
 then
   if [ -e "$LOCKFILE" ]
   then
@@ -18,6 +19,7 @@ then
     echo "puppet already enabled on $(puppet config print certname)"
   fi
 elif [[ $PT_puppet_mode == "disable" ]]
+task-output "deprecation" "This task is deprecated and will be removed in a future release. Please see this module's README for more information"
 then
   if [ -e "$LOCKFILE" ]
   then
