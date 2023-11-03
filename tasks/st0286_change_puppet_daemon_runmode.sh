@@ -5,8 +5,8 @@
 declare PT_reason
 declare PT_puppet_mode
 declare PT__installdir
-source "$PT__installdir/bash_task_helper/files/task_helper.sh"
 LOCKFILE="$(puppet config print statedir)/agent_disabled.lock"
+source "$PT__installdir/bash_task_helper/files/task_helper.sh"
 task-output "deprecation" "This task is deprecated and will be removed in a future release. Please see this module's README for more information"
 
 if [[ $PT_puppet_mode == "enable" ]]
