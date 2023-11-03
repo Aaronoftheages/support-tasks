@@ -2,6 +2,7 @@
 # Puppet Task Name: st0298_run_code_deploy
 declare PT__installdir
 source "$PT__installdir/bash_task_helper/files/task_helper.sh"
+task-output "deprecation" "This task is deprecated and will be removed in a future release. Please see this module's README for more information"
 declare PT_environment
 environment=$PT_environment
 [ "$environment" == 'all' ] && environment='--all'
